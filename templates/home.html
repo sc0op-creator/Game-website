@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+<div class="container" style="color: #fff;">
+    <div class="row">
+      <div class="col-sm">
+        <h2>About</h2>
+        <p>We are proud to launch a brand new Indian market just go and check all about it.</p>
+        <a href = "{{ url_for('about') }}"><button type="button" class="btn btn-outline-light">Read more</button></a>
+      </div>
+      
+      <div class="col-sm">
+        <h2>Downlad</h2>
+        <p>Get the game now and enjoy the thril with your gaming partners.(The game is under construction)</p>
+        <a href = "{{ url_for('download') }}"><button type="button" class="btn btn-outline-light">Download</button></a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container" style="color: #fff;" >
+    <!-- <div class="col-md-8 offset-md-2"> -->
+        <h1>Developers</h1>
+        <div class="container-fluid">
+        <h4>Founder</h4><p>Prantik Paul</p>
+        <h4>Game Developer</h4><p>godhunter</p>
+        <p>yooooo</p>
+        <p>aryanindia</p>
+        <h4>Website</h4>
+        <p>scoop</p>
+        <b><i>(all names are the igl of the developers join the <a href="https://discord.gg/Pxd8Cb2H" style="color: #fff; text-decoration: none;"><i class="fab fa-discord"></i> server</a> to know more)</i></b>
+    <!-- </div> -->
+  </div>
+{% endblock content %}
